@@ -11,7 +11,7 @@ export default function runManagment(rules, roundOfGame) {
     if (answer === userAnswer) {
       console.log('Correct!');
     } else {
-      console.log(`${userAnswer} is wrong answer ;(. Correct answer was ${answer}. \nLet's try again, ${name}!`);
+      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${answer}'. \nLet's try again, ${name}!`);
       return;
     }
   }

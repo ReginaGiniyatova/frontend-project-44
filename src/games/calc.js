@@ -1,6 +1,5 @@
 import randomNumber from '../randomNumber.js';
 import runManagment from '../index.js';
-import randomAction from '../randomAction.js';
 
 const isCalced = (a, b, action) => {
   switch (action) {
@@ -13,6 +12,11 @@ const isCalced = (a, b, action) => {
     default:
       return null;
   }
+};
+
+const randomAction = () => {
+  const arr = ['+', '-', '*'];
+  return arr[Math.floor(Math.random() * arr.length)];
 };
 
 const isCalcGame = () => {

@@ -17,8 +17,8 @@ const gcd = (a, b) => {
 };
 
 const isGcdGame = () => {
-  const a = randomNumber() + 1;
-  const b = randomNumber() + 1;
+  const a = randomNumber();
+  const b = randomNumber();
 
   const question = `${a} ${b}`;
   const answer = gcd(a, b);

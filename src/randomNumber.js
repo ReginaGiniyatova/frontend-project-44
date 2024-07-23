@@ -1,3 +1,3 @@
-export default function randomNumber() {
-  return Math.floor(Math.random() * 101);
+export default function randomNumber(min = 0, max = 100) {
+  return Math.floor(min + Math.random() * (max - min + 1));
 }
