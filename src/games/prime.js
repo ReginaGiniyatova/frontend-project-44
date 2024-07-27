@@ -2,12 +2,12 @@ import randomNumber from '../randomNumber.js';
 import runManagment from '../index.js';
 
 const isPrime = (number) => {
-    for (let i = 2; i * i <= number; i += 1) {
-        if (number % i === 0) {
-            return false
-        }
+  for (let i = 2; i * i <= number; i += 1) {
+    if (number % i === 0) {
+      return false;
     }
-    return number > 1;
+  }
+  return number > 1;
 };
 
 const isPrimeGame = () => {
